@@ -1,0 +1,165 @@
+.arrow-button {
+  position: relative;
+  background-color: transparent;
+  color: #4caf50;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: Chalkduster;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  width: 10em;
+  height: 3em;
+}
+
+.arrow-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #4caf50 transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+
+h1 {
+  color: #171c61;
+  font-family: Chalkduster;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  left: 100px;
+  top: 500px;
+}
+
+.absolute_2 {
+  position: absolute;
+  right: 350px;
+  top: 130px;
+}
+
+.absolute_3 {
+  position: absolute;
+  left: 250px;
+  top: 110px;
+}
+
+.absolute_4 {
+  position: absolute;
+  left: 480px;
+  top: 120px;
+}
+
+.absolute_5 {
+  position: absolute;
+  left: 150px;
+  top: 1000px;
+}
+
+.absolute_6 {
+  position: absolute;
+  right: 80px;
+  top: 1100px;
+}
+
+.animation {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+
+.keyframe1 {
+  animation-name: anim_v;
+}
+
+@keyframes anim_v {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, 60px);
+  }
+}
+
+.keyframe2 {
+  animation-name: anim_s;
+  transform: rotate(5deg);
+  animation-duration: 5s;
+}
+
+@keyframes anim_s {
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.keyframe3 {
+  animation-name: anim_h;
+}
+
+@keyframes anim_h {
+  0% {
+    transform: translate(0px, 0);
+  }
+  100% {
+    transform: translate(30px, 0);
+  }
+}
+
+.keyframe4 {
+  animation-name: anim_j;
+  transform: scale(0.85, 0.85);
+}
+
+@keyframes anim_j {
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.keyframe5 {
+  animation-name: anim_k;
+}
+
+@keyframes anim_k {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, 50px);
+  }
+}
+
+.gradient {
+  display: inline-block;
+  background-color: transparent;
+  padding: 30px 80px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 30px;
+  border: 1px solid #fa6c9f;
+  color: #fa6c9f;
+  transition: all 0.4s ease-out;
+}
+
+.gradient:hover {
+  border-color: transparent;
+  color: #fff;
+  background: linear-gradient(270deg, #fa6c9f 0%, #ffe140 50%, #ff357f 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  box-shadow: 0.5px 10px rgb(250, 108, 159, 0.4);
+}
